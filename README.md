@@ -6,3 +6,5 @@ including the use of tools such as:
 4. Selenium IDE
 5. Gatling
 6. TOMCAT
+
+The index.jsp is the web page that all the tests has done on this site.
