@@ -1,0 +1,108 @@
+{
+  "id": "c902fa61-528f-4ca2-b991-f38a965fa6f6",
+  "version": "2.0",
+  "name": "Final project",
+  "url": "http://localhost:3001",
+  "tests": [{
+    "id": "afb62601-3063-4c7d-804d-6b9dca765b80",
+    "name": "test 1",
+    "commands": [{
+      "id": "ec1ff604-d6e4-430f-a737-c37cc403925d",
+      "comment": "",
+      "command": "open",
+      "target": "/finalProject/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa5a5ec5-48ac-4f5d-b8e0-025693b0c41d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "904x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87d9641a-a2c7-44d5-ae88-a5fa18ba7482",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='myFunction()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click Me!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba80933d-eaf5-44a5-9850-ecbfd48ea926",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Button clicked!",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a7eeff5-be79-4006-84c3-c57303836093",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='myFunction()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click Me!')]", "xpath:innerText"]
+      ],
+      "value": "Click Me!"
+    }, {
+      "id": "0ff85a37-b8e2-4f7f-9389-1fbd7bb29890",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4074400-a5e8-40bc-8374-b3c642a1947b",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Final DevOps Project",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0336a741-76b7-4fb6-bf15-53695853e43c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Visit Example.com",
+      "targets": [
+        ["linkText=Visit Example.com", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Visit Example.com')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://advantageonlineshopping.com/#/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Visit Example.com')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "772867a9-4db6-461e-a785-703c46536732",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.logoDemo",
+      "targets": [
+        ["css=.logoDemo", "css:finder"],
+        ["xpath=//a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'DEMO')]", "xpath:innerText"]
+      ],
+      "value": "DEMO"
+    }]
+  }],
+  "suites": [{
+    "id": "bdd81eb3-c71b-4fa7-9bdc-d02508d10aae",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["afb62601-3063-4c7d-804d-6b9dca765b80"]
+  }],
+  "urls": ["http://localhost:3001/"],
+  "plugins": []
+}
